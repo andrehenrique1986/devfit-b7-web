@@ -2,9 +2,10 @@ import React from "react";
 import styled from "styled-components/native";
 import { connect } from "react-redux";
 import DefaultButton from "../components/DefaultButton";
+import { Button, SafeAreaView, Text, TextInput } from "react-native";
 
 
-const Container = styled.SafeAreaView`
+const Container = styled(SafeAreaView)`
     flex: 1 ;
     align-items: center;
     background-color: #FFF;
@@ -12,14 +13,14 @@ const Container = styled.SafeAreaView`
     margin-right: 30px;
 `;
 
-const HeaderText = styled.Text`
+const HeaderText = styled(Text)`
     font-size: 22px;
     color: #333;
     margin-top: 50px;
     margin-bottom: 50px;
 `;
 
-const NameInput = styled.TextInput`
+const NameInput = styled(TextInput)`
     border: 1px solid #CCC;
     width: 100%;
     height: 50px;
@@ -28,7 +29,7 @@ const NameInput = styled.TextInput`
     padding: 10px;
 `;
 
-const NextButton = styled.Button`
+const NextButton = styled(Button)`
 
 `;
 

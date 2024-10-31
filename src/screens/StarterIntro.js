@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components/native";
 import DefaultButton from "../components/DefaultButton";
+import { Image, Text, View, SafeAreaView } from "react-native";
 
 
-const Container = styled.SafeAreaView`
+const Container = styled(SafeAreaView)`
     flex: 1 ;
     justify-content: center;
     align-items: center;
@@ -12,28 +13,28 @@ const Container = styled.SafeAreaView`
     margin-right: 30px;
 `;
 
-const WelcomeText = styled.Text`
+const WelcomeText = styled(Text)`
     font-size: 22px;
     color: #333;
 
 `;
 
-const WelcomeImage = styled.View`
+const WelcomeImage = styled(View)`
     flex: 1;
     justify-content: center;
 `;
 
-const WelcomeLogo = styled.Image`
+const WelcomeLogo = styled(Image)`
     width: 200px;
     height: 200px;
 `;
 
-const BeginConfigArea = styled.View`
+const BeginConfigArea = styled(View)`
     width: 100%;
     margin-bottom: 50px;
 `;
 
-const ButtonText = styled.Text`
+const ButtonText = styled(Text)`
    color: #FFF; 
 `;
 
